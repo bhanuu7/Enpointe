@@ -12,36 +12,6 @@ app.use(cors())
            console.log("Database Connected")
   })
 
-//const query = 'drop table accounts'
-//db.run(query, [], (err) => {
-//    if (err) return console.error(err.message)
-//    console.log("table droppped")
-//})
-
-//const query = `create table accounts(username varchar, balance decimal(10,2), transaction_type varchar, transferred_amount decimal(10,2),time time)`
-//db.run(query, [], (err) => {
-//    if (err) return console.error(err.message)
-//    console.log("table created")
-//})
-
-    //const a = `insert into users values(?,?,?)`
-    //db.run(a, ["Bhanu411",], (err) => {
-    //    if (err) return console.error(err.message)
-    //console.log("recorded")
-    //})
-
-
-//const query = `delete from accounts where username='Bhanu411'`
-//db.run(query, [], (err) => {
-//    if (err) return console.error(err.message)
-//    console.log("deleted")
-//})
-
-    //const query = `update users set role='banker' where username='Bhanu411'`
-    //db.run(query, [], (err, res) => {
-    //    if (err) return console.error(err.message)
-    //    console.log(res)
-    //})
 
 
 
