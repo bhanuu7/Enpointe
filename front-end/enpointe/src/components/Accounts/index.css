@@ -1,0 +1,10 @@
+
+.account-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    height: min-content;
+}

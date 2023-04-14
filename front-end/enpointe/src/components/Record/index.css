@@ -1,0 +1,14 @@
+.record {
+    display: flex;
+  
+}
+
+.item {
+    height:5vh;
+    width:10vw;
+    padding:10px;
+    color:#ffffff;
+    border: 1px solid gray;
+    margin-bottom:-16px;
+    text-align:center;
+}
