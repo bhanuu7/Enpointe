@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Axios from 'axios'
 import './index.css'
@@ -54,11 +54,16 @@ function Register() {
     return (
         <form className="login-bg" onSubmit={submitForm} >
             <h1>Register</h1>
-            <label htmlFor="username">Username</label>
-            <input type="text" id="username" onChange={updateUsername} />
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={updatePassword} />
-            <button type="submit">SUBMIT</button>
+            <div className="input-label">
+                <label htmlFor="username">Username</label>
+                <input type="text" id="username" onChange={updateUsername} className="input" />
+            </div>
+            <div className="input-label">
+                <label htmlFor="password">Password</label>
+                <input type="password" id="password" onChange={updatePassword} className="input" />
+            </div>
+            <button type="submit" className="submit-button">SUBMIT</button>
+            <p>Already have an account? click here to <Link to="/login">sign-in</Link></p>
         </form>
     )
 

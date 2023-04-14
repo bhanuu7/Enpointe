@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import {Link } from 'react-router-dom'
 import Axios from "axios"
 import { AiFillCloseCircle } from 'react-icons/ai'
 import Cookies from "js-cookie"
@@ -93,6 +94,7 @@ class Transactions extends Component {
             <div className="transactions-bg">
                 <h2>Hi user, welcome to Enpointe online banking services</h2>
                 
+                <Link to="/login"><button className="logout-button">LOGOUT</button></Link> 
                 <div className="buttons-container">
                     <button className="button" onClick={ this.deposit}>Deposit</button>
                     <button className="button" onClick={this.withdraw}>Withdraw</button>

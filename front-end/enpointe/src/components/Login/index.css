@@ -1,9 +1,29 @@
-*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    font-family: 'HP Simplified';
 }
 .login-bg{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    background-color:rgba(0,0,0,0.3);
+    height:100vh;
+}
+
+.input-label{
+    display:flex;
+    width:min-content;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom:10px;
+}
+
+.input{
+    outline:none;
+    background-color:rgb(38, 32, 32, 0.97);
+    padding:8px;
+    color:#ffffff;
+    margin-top:7px;
+    font-family:'HP Simplified'
 }

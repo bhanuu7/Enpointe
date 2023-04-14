@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
 // import Register from '../Register'
 import Axios from 'axios'
@@ -56,11 +56,16 @@ function Login () {
         return (
             <form className="login-bg" onSubmit={submitForm} >
                 <h1>Login</h1>
+                <div className="input-label">          
                 <label htmlFor="username">Username</label>
-                <input type="text" id="username" onChange={updateUsername} />
+                 <input type="text" id="username" onChange={updateUsername} className="input"/>
+                </div>
+                <div className="input-label">
                 <label htmlFor="password">Password</label>
-                <input type="password" id="password" onChange={updatePassword} />
-                <button type="submit">LOGIN</button>
+                    <input type="password" id="password" onChange={updatePassword} className="input" />
+                </div>
+                <button type="submit" className="submit-button">LOGIN</button>
+                <p>Didn't have an account? click here to <Link to="/register">sign-up</Link></p>
             </form>
         )
 }

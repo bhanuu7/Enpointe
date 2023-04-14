@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie'
 import Axios from 'axios'
 import { Component } from 'react'
+import {Link } from 'react-router-dom'
 import Record from '../Record'
 import './index.css'
 
@@ -38,10 +39,12 @@ class Accounts extends Component {
        console.log(transactions)
         return (
             <div className="account-bg">
+                <Link to="/login"><button className="logout-button">LOGOUT</button></Link>
                 {transactions.map(each => (
                     // <p>{each.username}</p>
                     <Record props={each} />
                 ))}
+              <Link to="/login"><button clasName="button">LOGOUT</button></Link>
             </div>
         )
     }
